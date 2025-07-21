@@ -65,7 +65,7 @@ public class UserController {
 
         StringBuilder message = new StringBuilder();
 
-        WeatherResponse weatherResponse = weatherService.-getWeather("Lahore");
+        WeatherResponse weatherResponse = weatherService.getWeather("Lahore");
         WeatherResponse.Location location = weatherResponse.getLocation();
         WeatherResponse.Current current = weatherResponse.getCurrent();
         WeatherResponse.Condition condition = current.getCondition();
